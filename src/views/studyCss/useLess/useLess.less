@@ -1,0 +1,41 @@
+@import './sanjiaoxing.less';
+// 混合传参
+.juzhong(@w:200px, @h:200px) {
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  height: @h;
+  width: @w;
+}
+// 变量
+@color: 1px red solid; // 属性值
+@b: border; // 属性名
+@c: .content1; // 类名
+@{c} {
+  .juzhong(600px,600px);
+  @{b}: @color;
+ 
+  .content2 {
+    .juzhong(@w:400px,@h:400px);//给指定参数传值
+    border: @color;
+  }
+  .content3 {
+    .juzhong();
+    border: @color;
+    background: pink;
+    &:hover {
+      background: red;
+    }
+  }
+ 
+}
+
+.sanjiao{
+  .sanjiaoxing();
+  .sanjiaoxing(T,50px,red);
+}
+.c {
+  width: (100 + 100px);
+  height: 200px;
+  border: hotpink solid 1px;
+}

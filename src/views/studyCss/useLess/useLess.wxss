@@ -1,0 +1,41 @@
+.content1 {
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  height: 600px;
+  width: 600px;
+  border: 1px red solid;
+}
+.content1 .content2 {
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  height: 400px;
+  width: 400px;
+  border: 1px red solid;
+}
+.content1 .content3 {
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  height: 200px;
+  width: 200px;
+  border: 1px red solid;
+  background: pink;
+}
+.content1 .content3:hover {
+  background: red;
+}
+.sanjiao {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border-width: 50px;
+  border-style: dashed  dashed solid dashed ;
+  border-color: transparent transparent red transparent;
+}
+.c {
+  width: 200px;
+  height: 200px;
+  border: hotpink solid 1px;
+}

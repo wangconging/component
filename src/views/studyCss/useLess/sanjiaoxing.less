@@ -1,0 +1,27 @@
+.sanjiaoxing(){
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+.sanjiaoxing(L, @w, @c){
+  border-width: @w;
+  border-style: solid ;
+  border-color: transparent @c  transparent transparent ;
+}
+.sanjiaoxing(R, @w, @c){
+  border-width: @w;
+  border-style: solid;
+  border-color: transparent transparent transparent @c;
+}
+
+.sanjiaoxing(B, @w, @c){
+  border-width: @w;
+  border-style: solid dashed dashed dashed ;
+  border-color:  @c transparent transparent transparent;
+}
+
+.sanjiaoxing(T, @w, @c){
+  border-width: @w;
+  border-style: dashed  dashed solid dashed ;
+  border-color: transparent transparent @c transparent;
+}
