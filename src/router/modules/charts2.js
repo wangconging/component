@@ -14,52 +14,52 @@ const chartsRouter = {
   children: [{
     path: 'echartsOne',
     component: () => import('@/views/Echarts2/echartsOne/echartsOne.vue'),
-    name: 'echartsOne',
+    name: 'echartsOne2',
     meta: { title: '图表1', noCache: true }
   },
   {
     path: 'echartsTwo',
     component: () => import('@/views/Echarts2/echartsTwo.vue'),
-    name: 'echartsTwo',
+    name: 'echartsTwo2',
     meta: { title: '图表2', noCache: true }
   },
   {
     path: 'echartsThree',
     component: () => import('@/views/Echarts2/echartsThree.vue'),
-    name: 'echartsThree',
+    name: 'echartsThree2',
     meta: { title: '图表3', noCache: true }
   },
   {
     path: 'echartsFour',
     component: () => import('@/views/Echarts2/echartsFour.vue'),
-    name: 'echartsFour',
+    name: 'echartsFour2',
     meta: { title: '图表4', noCache: true }
   },
   {
     path: 'echartsFive',
     component: () => import('@/views/Echarts2/echartsFive.vue'),
-    name: 'echartsFive',
+    name: 'echartsFive2',
     meta: { title: '图表5', noCache: true }
   }, {
     path: 'echartsSix',
     component: () => import('@/views/Echarts2/echartsSix.vue'),
-    name: 'echartsSix',
+    name: 'echartsSix2',
     meta: { title: '图表6', noCache: true }
   },
   {
     path: 'echartsSeven',
     component: () => import('@/views/Echarts2/echartsSeven.vue'),
-    name: 'echartsSeven',
+    name: 'echartsSeven2',
     meta: { title: '图表7', noCache: true }
   }, {
     path: 'echartsEight',
     component: () => import('@/views/Echarts2/echartsEight.vue'),
-    name: 'echartsSeven',
+    name: 'echartsEight2',
     meta: { title: '图表8', noCache: true }
   }, {
     path: 'echartsNine',
     component: () => import('@/views/Echarts2/echartsNine.vue'),
-    name: 'echartsNine',
+    name: 'echartsNine2',
     meta: { title: '图表9', noCache: true }
   }
   ]

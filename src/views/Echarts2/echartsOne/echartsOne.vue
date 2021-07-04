@@ -134,8 +134,30 @@ export default {
       // 指定图表的配置项和数据
       var option = {
         title: { // 配置标题组件，包含主标题和副标题
+          show: true,
           text: '这里是绘制图表的标题',
-          subtext: '这里是副标题'
+          textStyle: { // 主标题的样式设置
+            color: '#fff',
+            fontSize: 12,
+            fontStyle: 'normal',
+            fontWeight: 'normal'
+          },
+          tooltip: {
+            // type: 'line',
+            // lineStyle: {
+            //   color: '#ccc',
+            //   with: 2,
+            //   type: 'solid'
+            // }
+          },
+          subtext: '这里是副标题',
+          subtextStyle: { // 副标题文本样式
+            fontFamily: 'Arial, Verdana, sans...',
+            fontSize: 12,
+            color: '#fff',
+            fontStyle: 'normal',
+            fontWeight: 'normal'
+          }
         },
         tooltip: {},
         legend: { // 配置图例组件，一个echarts图表中可以存在多个图例组件
@@ -154,7 +176,91 @@ export default {
       // 使用刚指定的配置项和数据显示图表
       myChart.setOption(option)
     },
-    getEcharts2() { },
+    getEcharts2() {
+      var myChart = this.$echarts.init(document.getElementById('echart2'))
+      var option = {
+        //  backgroundColor: '#00265f',
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          }
+        },
+        grid: {
+          left: '0%',
+          top: '10px',
+          right: '0%',
+          bottom: '4%',
+          containLabel: true
+        },
+        xAxis: [{
+          type: 'category',
+          data: ['1#', '2#', '3#', '4#', '5#', '6#', '7#', '8#', '9#'],
+          axisLine: {
+            show: true,
+            lineStyle: {
+              color: 'rgba(255,255,255,.1)',
+              width: 1,
+              type: 'solid'
+            }
+          },
+          axisTick: {
+            show: false
+          },
+          axisLabel: {
+            interval: 0,
+            rotate: 50,
+            show: true,
+            splitNumber: 15,
+            textStyle: {
+              color: 'rgba(255,255,255,.6)',
+              fontSize: '12'
+            }
+          }
+        }],
+        yAxis: [{
+          type: 'value',
+          axisLabel: {
+            show: true,
+            textStyle: {
+              color: 'rgba(255,255,255,.6)',
+              fontSize: '12'
+            }
+          },
+          axisTick: {
+            show: false
+          },
+          axisLine: {
+            show: true,
+            lineStyle: {
+              color: 'rgba(255,255,255,.1	)',
+              width: 1,
+              type: 'solid'
+            }
+          },
+          splitLine: {
+            lineStyle: {
+              color: 'rgba(255,255,255,.1)'
+            }
+          }
+        }],
+        series: [
+          {
+            type: 'bar',
+            data: [200, 300, 300, 900, 1500, 1200, 600, 200, 300],
+            barWidth: '35%', // 柱子宽度
+            itemStyle: {
+              normal: {
+                color: '#2f89cf',
+                opacity: 1,
+                barBorderRadius: 5
+              }
+            }
+          }
+        ]
+      }
+      myChart.setOption(option)
+    },
     getEcharts3() { },
     getEcharts4() { },
     getEcharts5() { },

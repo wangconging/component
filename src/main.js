@@ -24,7 +24,9 @@ import less from 'less'
 import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
-
+if(process.env.NDDE_ENV !== 'production' ) {
+  require('./mock')
+}
 Vue.use(VXETable)
 Vue.use(less)
 // Vue.use(marked)

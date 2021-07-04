@@ -54,7 +54,7 @@ const chartsRouter = {
   }, {
     path: 'echartsEight',
     component: () => import('@/views/systemManage/echarts/echartsEight/echartsEight.vue'),
-    name: 'echartsSeven',
+    name: 'echartsEight',
     meta: { title: '图表8', noCache: true }
   }, {
     path: 'echartsNine',

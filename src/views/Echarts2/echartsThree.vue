@@ -1,5 +1,5 @@
 <template>
-  <div>Echarts 3</div>
+  <div>echarts 3</div>
 </template>
 
 <script>
@@ -11,4 +11,3 @@ export default {
 <style>
 
 </style>
-

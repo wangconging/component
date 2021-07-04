@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import codeShow from '@/components/myComponents/codeShow/codeShow'
+import codeShow from "@/components/myComponents/codeShow/codeShow";
 
 export default {
   components: {
-    codeShow
+    codeShow,
   },
   data() {
     return {
@@ -55,12 +55,10 @@ export default {
     cursor: pointer;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   }
-</style>`
-    }
+</style>`,
+    };
   },
-  mounted() {
-  },
-  methods: {
-  }
-}
+  mounted() {},
+  methods: {},
+};
 </script>

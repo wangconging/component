@@ -7,3 +7,10 @@ export function login(query) {
     params: query
   })
 }
+export function getUserInfo(query) {
+  return request({
+    url: '/getUserInfo',
+    method: 'get',
+    params: query
+  })
+}

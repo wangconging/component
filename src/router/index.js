@@ -4,7 +4,7 @@ import Layout from '@/layout'
 import chartsRouter from './modules/charts.js'
 import chartsRouter2 from './modules/charts2.js'
 import vue2Router from './modules/vue2.js'
-
+import threejs from './modules/threejs.js'
 Vue.use(Router)
 
 export const constantRoutes = [
@@ -104,7 +104,7 @@ export const asyncRoutes = [
       {
         path: 'VueChuanzhi',
         component: () => import('@/views/VUE/Vue-chuanzhi/parentPage.vue'),
-        name: 'echartsSeven',
+        name: 'VueChuanzhi',
         meta: { title: '传值', noCache: true }
       },
       {
@@ -161,6 +161,18 @@ export const asyncRoutes = [
         meta: { title: '动画2', noCache: true }
       },
       {
+        path: 'mock1',
+        component: () => import('@/views/mock/mock1'),
+        name: 'mock1',
+        meta: { title: 'mock1', noCache: true }
+      },
+      {
+        path: 'mock2',
+        component: () => import('@/views/mock/mock2'),
+        name: 'mock2',
+        meta: { title: 'mock2', noCache: true }
+      },
+      {
         path: 'table1',
         component: () => import('@/views/VUE/table/table1'),
         name: 'Table1',
@@ -195,6 +207,7 @@ export const asyncRoutes = [
   chartsRouter,
   chartsRouter2,
   vue2Router,
+  threejs,
   { path: '*', redirect: '/404', hidden: true }
 ]
 const createRouter = () => new Router({
